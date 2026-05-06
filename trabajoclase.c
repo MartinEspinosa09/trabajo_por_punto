@@ -13,9 +13,14 @@ int main() {
    float *ptrF;         
    ptrF = &pi;   
   decimal=*ptrF;
-   printf("%.3f %.3f %p",pi ,decimal ,ptrF);
+   printf("%.3f %.3f %p\n",pi ,decimal ,ptrF);
    
    
-
+   char letra= 'a', caracter;
+   char *ptrC;
+   ptrC=&letra;
+   caracter = *ptrC;
+   
+   printf("%c %c %p", letra, caracter, ptrC);
     return 0;
 }
