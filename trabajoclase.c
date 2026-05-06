@@ -1,17 +1,21 @@
+
 #include <stdio.h>
 
 int main() {
    int num=150, a;
-   int *x;  //es el puntero
+   int *x;  
+   x=&num;
+   a=*x;  
+   printf("%d %d %p\n",num ,a ,x);
    
-   x=&num; //almacena la direccion del num
-   printf("%d %p",num, x);
-
+   
    float pi=3.1415, decimal;
-   float *ptrF;         //se inicializa el puntero
-   ptrF = &pi;           //almacena el valor de pi
-   printf("%d",pi, ptrF);
-
+   float *ptrF;         
+   ptrF = &pi;   
+  decimal=*ptrF;
+   printf("%.3f %.3f %p",pi ,decimal ,ptrF);
+   
+   
 
     return 0;
 }
